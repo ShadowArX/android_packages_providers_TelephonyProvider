@@ -35,12 +35,8 @@ public class SmsProviderTestable extends SmsProvider {
 
     // close mDbHelper database object
     protected void closeDatabase() {
-        if (mCeOpenHelper != null) {
-            mCeOpenHelper.close();
-        }
-        if (mDeOpenHelper != null) {
-            mDeOpenHelper.close();
-        }
+        mCeOpenHelper.close();
+        mDeOpenHelper.close();
     }
 
     /**
